@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e6f499c8cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!----------------header section-------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="imgs/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        <div class="header-text">
+            <p>Hello ,mates👋!</i></p>
+            <h1>This is <span><i>Poorani</i></span><br>an IT Student.</h1>
+        </div>
+        </div>
+    </div>
+    <!-----------------About section----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="abt-col-1">
+                    <img src="imgs/user.png">
+                </div>
+                <div class="abt-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As an IT student 👩‍🎓 with a passion for cloud computing, 
+                       I bring a wealth of hands-on experience and a thirst 
+                       for knowledge to the table. With a certification as 
+                       an AWS Certified Cloud Practitioner, I've delved deep 
+                       into cloud-based technologies, honing my skills in 
+                       Python, HTML, Java, CSS, and more..
+                       <br><br>
+                       In addition to my practical experience, I've 
+                       actively pursued further learning through a 
+                       range of certifications, including AWS Cloud 
+                       Practitioner, Cloud Essentials, and Cloud Security, 
+                       among others. These certifications underscore my 
+                       commitment to staying at the forefront of cloud 
+                       technology trends and best practices.
+                       <br><br>
+                       Connect 🤝 with me on LinkedIn to explore potential 
+                       collaborations and opportunities for growth !</p>
+
+                       <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                       </div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming knowledge</span><br>Python <br> Java <br> C </li>
+                            <li><span>Front-end Development</span><br>HTML <br> CSS <br> JavaScript </li>
+                            <li><span>Tools and Technologies</span><br>AWS <br>Figma </li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 1 - May30, 2023</span><br>Cloud Intern - INAYATHALAM ARCHITECT </li>
+                            <li><span>June 1 - July 30, 2023</span><br>Cloud Intern - AICTE - DDOS SOLUTIONS </li>
+                            <li><span>June 1- July 30, 2024</span><br>Cloud Intern - ITC CLOUD TECH</li>
+                        </ul>
+                       </div>
+                       <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Current</span><br>B.Tech (IT) - St. Joseph's Institute of Technology</li>
+                            <li><span>2020 - 2021</span><br>HSC - D.A.V Matriculation Higher Secondary School</li>
+                            <li><span>2018 - 2019</span><br>SSLC - D.A.V Matriculation Higher Secondary School</li>
+                        </ul>
+                       </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------Services------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud <br>Computing</h2>
+                    <p>Cloud computing is also referred to as 
+                       Internet-based computing, it is a technology 
+                       where the resource is provided as a service 
+                       through the Internet to the user. The data 
+                       that is stored can be files, images, documents, 
+                       or any other storable document.</p>
+                       <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX <br>Design</h2>
+                    <p>UI/UX design, short for User Interface 
+                       and User Experience design, is the process 
+                       of enhancing user satisfaction by improving 
+                       the usability, accessibility, and pleasure 
+                       provided in the interaction between the user and the product.</p>
+                       <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Front-end developers use web languages such as 
+                    <b>HTML, CSS, and JavaScript</b> to create websites 
+                    and applications that users can access and interact with</p>
+                       <a href="https://github.com/POORANI-B-3003/frontend-projects">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------Portfolio section------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="imgs/work-1.png">
+                    <div class="layer">
+                        <h3>Multilingual Braille Conversion Using AWS</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                           Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="imgs/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                           Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="imgs/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                           Aenean commodo ligula eget dolor. Aenean massa.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/POORANI-B-3003/" class="btn">SEE MORE</a>
+        </div>
+    </div>
+    <!-------------Contact Section----------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> pooranibabu30@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 8122533249</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/POORANI-B-3003"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/poorani-babu/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="imgs/my-cv.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Thank You for Your Response!</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Poorani. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorial</p>
+        </div>
+    </div>
+
+
+ 
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwUnbDNqfJK1L3QDVKTcAHnqEkomFec7or7uOvwgD0qd5r4c0UR5_EOdtOY2O3-7f0-/exec'
+        const form = document.forms['submit-to-google-sheet']
+   
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+       
+    })
+
+    </script>
+
+    
+</body>
+</html>
